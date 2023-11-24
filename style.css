@@ -25,19 +25,22 @@ body{
     display: flex;
     list-style-type: none;
     gap: 16px;
+    justify-content: space-between;
 }
 .navigation a{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
 }
-.top-container{
+.top-container,
+.middle-content{
     display: flex;
     margin: 16px;
     padding: 16px;
     gap: 32px;
     justify-content: center;
     align-content: center;
+    margin-bottom: 10vh;
 }
 .top-text{
     color:#fff;
@@ -46,6 +49,7 @@ body{
     flex:1 1 0;
     align-content: center;
     justify-content: center;
+    min-width: 100px;
 
 }
 .top-text h1{
@@ -58,15 +62,47 @@ body{
     font-weight: 900;
     color: #F9FAf8;
 }
+.top-text button{
+    color: #F9FAf8;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px 20px;
+}
 .top-image{
-    background-color: #fff;
     display:flex;
     flex:1 1 0;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
+    min-width: 100px;
 }
 .top-image img{
-    max-width: 200px;
-    max-height: 200px;
+    min-width: 100px;
+    max-height:280px;
+}
+button {
+    background-color: #3882F6;
+}
+.middle{
+    display: flex;
+    margin: 16px;
+    padding: 16px;
+    gap: 32px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10vh;
+    flex-direction: column;
+}
+.middle-title{
+    text-align: center;
+}
+.middle-title h2{
+    font-weight: 900;
+    font-size: 36px;
+    color: #1F2937;
 }
