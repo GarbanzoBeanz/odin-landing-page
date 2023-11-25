@@ -43,14 +43,14 @@ body{
     font-size: 18px;
 }
 .top-container,
-.middle-content{
+.middle-content,
+.testimonial,
+.action{
     display: flex;
-    margin: 16px;
-    padding: 16px;
     gap: 32px;
     justify-content: center;
     align-content: center;
-    margin-bottom: 10vh;
+    padding:10vh;
 }
 .top-text{
     color:#fff;
@@ -99,12 +99,6 @@ button {
     background-color: #3882F6;
 }
 .middle{
-    display: flex;
-    margin: 16px;
-    gap: 32px;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 10vh;
     flex-direction: column;
 
 }
@@ -122,7 +116,6 @@ button {
     gap: 8;
     align-content: center;
     flex-wrap: wrap;
-    margin-bottom: 5vh;
 }
 .first{
     display: flex;
@@ -136,11 +129,7 @@ button {
     min-width: 100px;
 }
 .testimonial{
-    display: flex;
     background-color: #E5E7EB;
-    padding:10vh;
-    justify-content: center;
-    align-items: center;
 }
 .testimonial p{
     font-size: 36px;
@@ -150,3 +139,54 @@ button {
 .testimonial h3{
     text-align: right;
 }
+.action-container{
+    background-color: #3882F6;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 36px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.action-text,
+.action-button{
+    display: flex;
+    color:#fff;
+    min-width:100px;
+    flex:1 1 0;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.action-text{
+    flex-direction: column;
+    display: flex;
+    flex: 2 1 0;
+}
+.action-text *{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+.action-button button{
+    margin: 12px;
+    padding: 12px 24px;
+    border: #E5E7EB solid;
+    border-radius: 10px;
+}
+.action-button a{
+    color:#E5E7EB;
+    text-decoration: none;
+    font-weight: 800;
+}
+.action-text h3{
+    display: flex;
+    align-self: flex-start;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+}
+
